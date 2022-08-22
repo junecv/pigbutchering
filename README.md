@@ -1,6 +1,6 @@
 ---
 title: pigbutchering
-emoji: 🚀
+emoji: 🐷
 colorFrom: blue
 colorTo: blue
 sdk: streamlit
