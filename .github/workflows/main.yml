@@ -16,4 +16,7 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://junecv:$HF_TOKEN@huggingface.co/spaces/junecv/pigbutchering main
+        run: git lfs fetch --all
+            git lfs install --force --local
+            huggingface-cli lfs-enable-largefiles
+            git push --force https://junecv:$HF_TOKEN@huggingface.co/spaces/junecv/pigbutchering main
