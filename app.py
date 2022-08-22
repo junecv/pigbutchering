@@ -31,7 +31,8 @@ text = st.text_input('check if you\'re the \U0001F437', 'Hi Disky, how is your b
 if text:
     text_vector = text_vectorizer(text)
     out = model.predict(text_vector)[0][0]
-    st.write('Your \U0001F437 score is', out)
-    if out > 0.5:
-        st.write('I smell \U0001F953')
-    else: st.write('Well, think twice.')
+    st.write(out)
+    # st.write('Your \U0001F437 score is', out)
+    # if out > 0.5:
+    #     st.write('I smell \U0001F953')
+    # else: st.write('Well, think twice.')
