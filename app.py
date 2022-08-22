@@ -4,7 +4,7 @@ import tensorflow as tf
 from tensorflow.keras import layers
 
 # retrieve text vectorization layer 
-tv_spec = pkl.load(Open('model/tv_layer.pkl', 'rb'))
+tv_spec = pkl.load(open('model/tv_layer.pkl', 'rb'))
 text_vectorizer = layers.TextVectorization.from_config(tv_spec['config'])
 text_vectorizer.set_weights(tv_spec['weights'])
 
