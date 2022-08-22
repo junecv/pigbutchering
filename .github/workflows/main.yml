@@ -19,4 +19,4 @@ jobs:
         run: git lfs fetch --all
             git lfs install --force --local
             huggingface-cli lfs-enable-largefiles
-            git push --force https://junecv:$HF_TOKEN@huggingface.co/spaces/junecv/pigbutchering main
+            git push https://junecv:$HF_TOKEN@huggingface.co/spaces/junecv/pigbutchering main
