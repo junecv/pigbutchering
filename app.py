@@ -30,7 +30,7 @@ text = st.text_input('check if you\'re the \U0001F437', 'Hi Disky, how is your b
 
 if text:
     text_vector = text_vectorizer(text)
-    out = model.predict(text_vector)[0][0]
+    out = model.predict(text_vector)
     st.json(out)
     # st.write('Your \U0001F437 score is', out)
     # if out > 0.5:
